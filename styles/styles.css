@@ -1,0 +1,145 @@
+/* #F3DECD   #CDB6AE   #4D3251   #381D3E   #223539 */
+/* #F16236   #973031   #84CFD2   #1BADAD   #4D638C */
+/* font-family: 'Work Sans', sans-serif; */
+
+
+body{
+    margin:0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+}
+
+#content-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F3DECD;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock-container{
+    background-color: #F16236;
+    border: 5px solid #4D3251;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px 5px #CDB6AE;
+}
+
+#clock-title {
+    font-size: 48px;
+    color: #381D3E;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#clock-settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#clock-settings .setting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #381D3E;
+}
+
+#clock-settings .setting .adjust{
+    display: flex;
+    flex-direction: row;
+}
+
+#clock-settings .setting .adjust button{
+    margin: 0px 5px 15px;
+}
+
+#clock-settings .adjust .display{
+    background-color: #4D638C;
+    color: #381D3E;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border: 3px solid #223539;
+    width:42px;
+}
+
+#clock-display-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+.accent{
+    color: #381D3E;
+    background-color: #973031;
+    border: 3px solid #223539;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    width: 20px;
+}
+
+#clock-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+#clock-controls button{
+    margin: 0px 5px;
+    min-height: 42px;
+    min-width: 56px;
+    font-size: 24px;
+}
+
+#clock-display{
+    background-color: #4D638C;
+    color: #381D3E;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    border: 3px solid #223539;
+    width: 120px;
+}
+
+#timer{
+    font-size: 48px;
+}
+
+button{
+    color: #4D638C;
+    background-color: #84CFD2;
+    border-color: #4D638C;
+    outline: none;
+    border-radius: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #F3DECD;
+}
+
+button:active{
+    background-color: #CDB6AE ;
+}
