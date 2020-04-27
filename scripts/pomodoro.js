@@ -3,6 +3,7 @@ let sessionStartSelect = document.querySelector("#session-start");
 let breakStartSelect = document.querySelector("#break-start");
 let timerSelect = document.querySelector('#timer');
 let modeSelect = document.querySelector('#mode');
+let dingSelect = new Audio("../sounds/ding.wav");
 
 let settings = {
     'sessionStart': 25,
@@ -79,6 +80,7 @@ function timerInterval(){
     timerSelect.textContent = settings.timerResume;
 
     if (--timer < 0) {
+        dingSelect.play();
         if (settings.clockMode == "Session"){
             settings.clockMode = "Break";
             timer = settings.breakStart*60;
@@ -86,7 +88,6 @@ function timerInterval(){
             settings.clockMode = "Session";
             timer = settings.sessionStart*60;
         }
-
         modeSelect.textContent = settings.clockMode;
     } else {
         settings.timerResume = timer;
